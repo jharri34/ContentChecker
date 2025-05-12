@@ -1,0 +1,1 @@
+web: sh setup.sh &amp;&amp; streamlit run src/contentchecker/app.pya

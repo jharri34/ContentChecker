@@ -1,0 +1,23 @@
+[project]
+name = "contentchecker"
+version = "0.0.1"
+authors = [
+  { name="jharri34", email="harrisjayjamall@gmail.com" },
+]
+description = "ContentChecker is a privacy-first AI tool that helps adult and erotic creators avoid censorship by scanning images for NSFW risks before posting."
+readme = "README.md"
+requires-python = ">=3.12.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE*"]
+
+[project.urls]
+Homepage = "https://github.com/jharri34/ContentChecker"
+Issues = "https://github.com/jharri34/ContentChecker/issues"
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
