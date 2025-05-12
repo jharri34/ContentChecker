@@ -1,4 +1,4 @@
-opennsfw2==0.14.0
-Pillow==11.2.1
+opennsfw2
+Pillow
 streamlit
-tensorflow==2.19.0
+tensorflow
