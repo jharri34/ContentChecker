@@ -1,3 +1,16 @@
+---
+title: Contentchecker
+emoji: 🚀
+colorFrom: red
+colorTo: red
+sdk: docker
+app_port: 8501
+tags:
+- streamlit
+pinned: false
+short_description: ContentChecker is a privacy-first AI tool that helps adult a
+license: mit
+---
 # ContentChecker
 
  ContentChecker is a privacy-first AI tool that empowers creators—especially those in adult and erotic spaces—to navigate unfair censorship and moderation on mainstream platforms. Using the Yahoo Open-NSFW model, it scans and scores your images to detect how likely they are to be flagged as "Not Safe for Work" (NSFW). By providing early detection, ContentChecker helps you proactively adjust posts before publishing—protecting your visibility, income, and voice from shadowbans, blacklisting, and algorithmic erasure.
