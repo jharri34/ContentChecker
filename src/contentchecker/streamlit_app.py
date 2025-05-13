@@ -1,4 +1,4 @@
-# import opennsfw2 as n2
+import opennsfw2 as n2
 import streamlit as st
 from PIL import Image
 import io
