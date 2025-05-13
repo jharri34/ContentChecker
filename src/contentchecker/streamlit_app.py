@@ -1,7 +1,7 @@
 # import opennsfw2 as n2
 import streamlit as st
-# from PIL import Image
-# import io
+from PIL import Image
+import io
 
 
 
@@ -27,8 +27,8 @@ def main():
             st.error("Unsupported file type: {}".format(file_extension))
             return    
         image_data = uploaded_file.read()
-        # image = Image.open(io.BytesIO(image_data))
-        # st.image(image, caption="Uploaded Image")
+        image = Image.open(io.BytesIO(image_data))
+        st.image(image, caption="Uploaded Image")
         # try:
         #     nsfw_probability = n2.predict_image(image)
         #     text = "NSFW Probability: {:.2f}".format(nsfw_probability)
