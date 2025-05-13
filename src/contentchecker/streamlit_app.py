@@ -36,7 +36,7 @@ def main():
         except Exception as e:
             st.error("Error processing image: {}".format(e))
             nsfw_probability = None
-        st.image(uploaded_file, caption=None)
+        st.image(uploaded_file, caption="Uploaded Image")
         st.write("nsfw_probability", nsfw_probability)
     
 if __name__=="__main__":
