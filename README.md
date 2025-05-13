@@ -76,7 +76,71 @@ visit to learn more: https://github.com/bhky/opennsfw2
 https://github.com/yahoo/open_nsfw
 https://yahooeng.tumblr.com/post/151148689421/open-sourcing-a-deep-learning-solution-for
 
-## Adaptive and Community-Informed Intelligence
+## View the Demo
+
+You can try out ContentChecker directly in your browser without installing anything by visiting the Hugging Face Spaces demo:
+
+[View the Demo on Hugging Face](https://huggingface.co/spaces/jharri34/contentchecker)
+
+This demo allows you to upload images and see how ContentChecker evaluates them for NSFW content.
+
+## Installation and Running the Application
+
+Follow these steps to install and run ContentChecker on your local machine:
+
+### Prerequisites
+Make sure you have the following installed:
+- Python >=3.12 
+- pip (Python package manager)
+- Docker (optional, if you want to use the Docker setup)
+
+### Installation
+Clone the repository:
+   ```bash
+   git clone https://github.com/jharri34/ContentChecker.git
+   cd ContentChecker
+   ```
+Create a virtual environment (optional but recommended):
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+Install the required dependencies:
+```bash
+   pip install -r requirements.txt
+```
+Running the Application
+Start the application:
+
+```bash
+streamlit run src/contentchecker/app.py
+```
+
+Open your browser and navigate to:
+http://localhost:8501
+
+Running with Docker (Optional)
+If you prefer to use Docker:
+
+Build the Docker image:
+
+```bash
+docker build -t contentchecker .
+```
+Run the Docker container:
+
+```bash
+docker run -p 8501:8501 contentchecker
+```
+Open your browser and navigate to:
+> http://localhost:8501
+
+Notes
+All processing happens locally on your device to ensure privacy.
+Ensure your images are in supported formats (e.g., PNG, JPG, JPEG, GIF, BMP, TIFF).
+
+## Next Steps
+### Fine-Tuning the Model
 
 While the default model offers strong baseline performance, results can be improved by fine-tuning the model for your dataset, use case, or personal definition of NSFW.
 
@@ -88,10 +152,7 @@ Enable local reinforcement learning so your model learns from its mistakes.
 
 Opt-in to share anonymized calibration data that can help improve future updates.
 
-This empowers users—especially from marginalized communities often misrepresented in mainstream datasets—to know what gets flagged and why(kinda).
-
-
-
+This empowers users—especially from marginalized communities often misrepresented in datasets—to know what gets flagged and why(kinda).
 
 ## Understanding the Landscape
 Major platforms like Instagram, TikTok, and Facebook rely heavily on AI-powered moderation systems—especially deep learning models like CNNs—to flag NSFW content. These models are trained on massive datasets to detect patterns linked to nudity or sexual expression.
@@ -131,9 +192,5 @@ https://github.com/yahoo/open_nsfw?tab=readme-ov-file
 
 https://yahooeng.tumblr.com/post/151148689421/open-sourcing-a-deep-learning-solution-for
 
-
-
-Note
-====
 
 
